@@ -279,11 +279,7 @@ function thisFunctionNameIsReallyLong(
     address c
 )
     public
-    returns (
-        address someAddressName,
-        uint256 LongArgument,
-        uint256 Argument
-    )
+    returns (address someAddressName, uint256 LongArgument, uint256 Argument)
 {
     doSomething()
 

@@ -18,6 +18,13 @@ const options = {
     description: 'Number of spaces per indentation level.',
     range: { start: 0, end: Number.POSITIVE_INFINITY, step: 1 }
   },
+  parametersLength: {
+    since: '0.0.0',
+    category: CATEGORY_COMMON,
+    type: 'int',
+    default: 3,
+    description: 'Max length of parameters in a function or return declaration.'
+  },
   useTabs: {
     since: '1.0.0',
     category: CATEGORY_GLOBAL,
