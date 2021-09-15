@@ -649,7 +649,7 @@ contract c {
         return data[pos];
     }
 
-    mapping(uint256 => uint256) data;
+    mapping (uint256 => uint256) data;
 }
 
 contract Sharer {
@@ -663,7 +663,7 @@ contract Sharer {
 library IntegerSet {
     struct data {
         /// Mapping item => index (or zero if not present)
-        mapping(uint256 => uint256) index;
+        mapping (uint256 => uint256) index;
         /// Items by index (index 0 is invalid), items with index[item] == 0 are invalid.
         uint256[] items;
         /// Number of stored items.
@@ -747,7 +747,7 @@ contract User {
 
 // This broke it at one point (namely the modifiers).
 contract DualIndex {
-    mapping(uint256 => mapping(uint256 => uint256)) data;
+    mapping (uint256 => mapping (uint256 => uint256)) data;
     address public admin;
 
     modifier restricted() {
@@ -1007,10 +1007,10 @@ contract B is A {
 }
 
 contract Overrides {
-    mapping(address => bool) public override varName;
-    mapping(address => bool) public override(Foo) varName;
-    mapping(address => bool) public override(Foo, Bar) varName;
-    mapping(address => bool)
+    mapping (address => bool) public override varName;
+    mapping (address => bool) public override(Foo) varName;
+    mapping (address => bool) public override(Foo, Bar) varName;
+    mapping (address => bool)
         public
         override(
             Foo,

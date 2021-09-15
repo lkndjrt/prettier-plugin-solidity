@@ -479,10 +479,10 @@ contract Mappings {
 pragma solidity >=0.4.0 <0.7.0;
 
 contract Mappings {
-    mapping(uint256 => uint256) map;
-    mapping(address => bool) registeredAddresses;
-    mapping(uint256 => mapping(bool => Data[])) public data;
-    mapping(uint256 => mapping(uint256 => s)) data;
+    mapping (uint256 => uint256) map;
+    mapping (address => bool) registeredAddresses;
+    mapping (uint256 => mapping (bool => Data[])) public data;
+    mapping (uint256 => mapping (uint256 => s)) data;
 }
 
 ================================================================================

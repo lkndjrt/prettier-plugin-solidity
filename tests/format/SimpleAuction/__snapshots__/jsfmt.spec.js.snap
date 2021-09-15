@@ -145,7 +145,7 @@ contract SimpleAuction {
     uint256 public highestBid;
 
     // Allowed withdrawals of previous bids
-    mapping(address => uint256) pendingReturns;
+    mapping (address => uint256) pendingReturns;
 
     // Set to true at the end, disallows any change
     bool ended;

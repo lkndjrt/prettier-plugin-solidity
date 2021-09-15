@@ -1,6 +1,6 @@
 const Mapping = {
   print: ({ path, print }) => [
-    'mapping(',
+    'mapping (',
     path.call(print, 'keyType'),
     ' => ',
     path.call(print, 'valueType'),
